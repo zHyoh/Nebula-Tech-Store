@@ -223,3 +223,65 @@ nav {
 .no-margin {
     margin: 0;
 }
+
+.categories {
+    padding-block: 5rem;
+}
+
+.category-grid {
+    gap: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.category-card {
+    flex: 1;
+    min-width: 15rem;
+    height: 20rem;
+    border-radius: 1rem;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: flex-end;
+    cursor: pointer;
+    transition: transform var(--transition-duration), box-shadow var(--transition-duration);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.category-card::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.9) 10%, rgba(0, 0, 0, 0) 50%);
+    transition: opacity var(--transition-duration);
+}
+
+.category-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 30px rgba(0, 229, 255, 0.2);
+    border-color: var(--primary-color);
+}
+
+.category-info {
+    position: relative;
+    width: 100%;
+    padding: 1.5rem;
+    z-index: 2;
+}
+
+.category-name {
+    color: var(--white-color);
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+.category-arrow {
+    color: var(--primary-color);
+    font-size: 1.2rem;
+    transition: transform var(--transition-duration);
+}
+
+.category-card:hover .category-arrow {
+    transform: translateX(5px);
+}
