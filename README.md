@@ -31,7 +31,7 @@ Para este primer avance de maquetación, me he centrado en bases sólidas:
 
 > [!TIP]
 > Aquí puedes insertar una captura de pantalla de tu diseño una vez que lo tengas listo.
-> `![Preview del Proyecto](./assets/screenshot.png)`
+> `![Preview del Proyecto](./images/vista-previa.jpgg)`
 
 ---
 
