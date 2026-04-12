@@ -29,8 +29,6 @@ Para este primer avance de maquetación, me he centrado en bases sólidas:
 
 ## 📸 Vista Previa
 
-> [!TIP]
-> Aquí puedes insertar una captura de pantalla de tu diseño una vez que lo tengas listo.
 ![Preview del Proyecto](./images/vista-previa.jpg)
 
 ---
