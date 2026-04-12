@@ -35,10 +35,10 @@ Para este primer avance de maquetación, me he centrado en bases sólidas:
 
 ---
 
-## 🚀 Cómo Visualizar el Proyecto
+### 🚀 Cómo Visualizar el Proyecto
 
 Para ver el avance de la maquetación en tu entorno local, sigue estos pasos:
 
 1. Clona este repositorio:
    ```bash
-   git clone [https://github.com/tu-usuario/nebula-store.git](https://github.com/tu-usuario/nebula-store.git)
+   git clone [https://github.com/zHyoh/Nebula-Tech-Store.git](https://github.com/zHyoh/Nebula-Tech-Store.git)
