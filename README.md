@@ -1,42 +1,16 @@
-# Nebula Store | E-commerce Tech & Gamer Zone 🚀
+# React + Vite
 
-¡Bienvenido a **Nebula Store**! Este es el primer avance de mi proyecto final de desarrollo web. Se trata de una plataforma e-commerce de una sola página (One-page) especializada en hardware de alto rendimiento y periféricos para entusiastas del gaming.
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-El objetivo principal es ofrecer una interfaz **simple, pero hermosa**, utilizando una estética **Cyber-Cosmic** que combina elegancia profesional con la energía del mundo gamer.
+Currently, two official plugins are available:
 
----
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
 
-## 🛠️ Tecnologías Utilizadas
+## React Compiler
 
-Para este primer avance de maquetación, me he centrado en bases sólidas:
+The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
 
-* **HTML5:** Estructura semántica para mejorar el SEO y la accesibilidad.
-* **CSS3:** Estilos personalizados utilizando **CSS Grid** y **Flexbox** para un diseño responsivo.
-* **Google Fonts:** Uso de la tipografía **Raleway** para una lectura clara y moderna.
-* **Iconos:** [FontAwesome / Lucide] para una interfaz intuitiva.
+## Expanding the ESLint configuration
 
----
-
-## ✨ Características Principales
-
-* **Estética Cyber-Cosmic:** Paleta de colores en modo oscuro con acentos en Cian y Morado Neón.
-* **Flyers Dinámicos:** Hero section diseñada para captar la atención con ofertas destacadas.
-* **Zona Gamer:** Un apartado exclusivo con un diseño diferenciado para productos de alto desempeño.
-* **Categorización Inteligente:** Navegación fluida entre componentes, laptops y periféricos.
-* **Diseño Responsivo:** Adaptado para una visualización perfecta en móviles (2 columnas) y escritorio (3 columnas).
-
----
-
-## 📸 Vista Previa
-
-![Preview del Proyecto](./images/vista-previa.jpg)
-
----
-
-### 🚀 Cómo Visualizar el Proyecto
-
-Para ver el avance de la maquetación en tu entorno local, sigue estos pasos:
-
-1. Clona este repositorio:
-   ```bash
-   git clone [https://github.com/zHyoh/Nebula-Tech-Store.git](https://github.com/zHyoh/Nebula-Tech-Store.git)
+If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
