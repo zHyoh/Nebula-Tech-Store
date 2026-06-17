@@ -1,12 +1,10 @@
 export default function CartDrawer({ isOpen, onClose, cartItems, onRemoveItem }) {
   if (!isOpen) return null;
 
-  // Calcular el precio total de la compra
   const totalPrice = cartItems.reduce((acc, item) => acc + (item.price * item.quantity), 0);
 
   return (
     <div className="cart-overlay" onClick={onClose}>
-      {/* Detiene la propagación del clic para que no se cierre al presionar dentro del carrito */}
       <div className="cart-drawer" onClick={(e) => e.stopPropagation()}>
         <div className="cart-header d-flex j-content-s-between a-items-center">
           <h2>Tu Carrito</h2>
@@ -15,7 +13,7 @@ export default function CartDrawer({ isOpen, onClose, cartItems, onRemoveItem })
 
         <div className="cart-body">
           {cartItems.length === 0 ? (
-            <p className="empty-msg">Tu carrito está vacío galáctico... 🌌</p>
+            <p className="empty-msg">Tu carrito está vacío en esta órbita... 🌌</p>
           ) : (
             cartItems.map(item => (
               <div key={item.id} className="cart-item d-flex j-content-s-between a-items-center">
@@ -35,7 +33,7 @@ export default function CartDrawer({ isOpen, onClose, cartItems, onRemoveItem })
               <span>Total:</span>
               <span className="total-price">${totalPrice.toFixed(2)}</span>
             </div>
-            <button className="checkout-btn" onClick={() => alert('¡Procesando orden de Nebula Store! 🚀')}>
+            <button className="checkout-btn" onClick={() => alert('¡Procesando orden galáctica! 🚀')}>
               Proceder al Pago
             </button>
           </div>

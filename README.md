@@ -38,3 +38,52 @@ NEBULA-TECH-STORE/
 ├── index.html
 ├── package.json
 └── vite.config.js
+
+💻 Instalación y Desarrollo Local (Guía de Pasos npm)
+Sigue este flujo de comandos en tu terminal para clonar, instalar y ejecutar el entorno de desarrollo local desde cero:
+
+1. Clonar el repositorio
+Descarga una copia local del proyecto directamente desde GitHub:
+
+Bash
+git clone [https://github.com/zHyoh/Nebula-Tech-Store.git](https://github.com/zHyoh/Nebula-Tech-Store.git)
+2. Acceder al directorio
+Entra a la carpeta raíz que se acaba de crear:
+
+Bash
+cd Nebula-Tech-Store
+3. Instalar dependencias del proyecto (npm install)
+Descarga todos los módulos y paquetes necesarios de React y Vite especificados en el package.json:
+
+Bash
+npm install
+(Este comando generará automáticamente la carpeta node_modules y el archivo package-lock.json).
+
+4. Levantar el servidor local (npm run dev)
+Inicia el entorno de desarrollo automatizado de Vite para previsualizar la aplicación:
+
+Bash
+npm run dev
+5. Abrir en el navegador
+Una vez que la terminal indique que el entorno está listo, haz Ctrl + Clic o abre la siguiente dirección en tu navegador:
+
+Plaintext
+http://localhost:5173/
+🛠️ Comandos de Mantenimiento y Producción
+🔄 Forzar reinicio limpiando caché de Vite
+Si realizas cambios en los nombres de las imágenes dentro de public/images/ o modificas importaciones de componentes y el navegador se queda congelado mostrando datos antiguos, detén la terminal con Ctrl + C y fuerza una recarga limpia ejecutando:
+
+Bash
+npm run dev -- --force
+📦 Construcción para Producción (npm run build)
+Para compilar y empaquetar toda la aplicación optimizada para producción (listo para desplegar en plataformas de hosting como Vercel o Netlify), ejecuta:
+
+Bash
+npm run build
+Este comando procesará los archivos de desarrollo y generará una carpeta llamada dist/ en la raíz del proyecto, la cual contendrá exclusivamente el HTML, CSS y JavaScript minificados de alta velocidad.
+
+🚀 Previsualizar el empaquetado final (npm run preview)
+Si quieres probar de manera local cómo se comportará y renderizará la carpeta de producción dist/ antes de subirla a internet, utiliza:
+
+Bash
+npm run preview
