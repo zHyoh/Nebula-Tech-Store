@@ -1,16 +1,40 @@
-# React + Vite
+# Nebula Tech Store 🌌
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Nebula Tech Store es una aplicación web moderna de comercio electrónico enfocada en hardware y periféricos premium para gaming y desarrollo. El proyecto ha sido completamente migrado de una estructura HTML/CSS estática a una **arquitectura de componentes modulares altamente interactiva utilizando React 19 y Vite**.
 
-Currently, two official plugins are available:
+## 🚀 Características Implementadas
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+* **Arquitectura Modular:** Separación limpia de la interfaz en componentes independientes y reutilizables (`Header`, `Hero`, `Categories`, `GamerZone`, `ProductCard`, `CartDrawer`).
+* **Carrito Lateral Interactivo (Cart Drawer):** Panel flotante cyberpunk que permite visualizar productos añadidos, calcular subtotales dinámicamente y gestionar las cantidades en tiempo real sin recargar la página.
+* **Filtros Dinámicos:** Sistema de pestañas reactivas para categorizar y segmentar los productos en catálogo ("Todo", "Populares", "Nuevos").
+* **Navegación Fluida:** Eventos de scroll optimizados para dirigir al usuario de forma elegante desde las llamadas a la acción principales hasta las secciones de productos.
+* **Estética Premium:** Paleta de colores optimizada para entornos oscuros, tipografías estructuradas y layouts responsivos basados en Flexbox.
 
-## React Compiler
+## 🛠️ Tecnologías Utilizadas
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+* **React 19** - Librería para la construcción de interfaces declarativas.
+* **Vite 6** - Entorno de desarrollo rápido y empaquetador de producción.
+* **JavaScript (ES6+)** - Lógica reactiva y manejo de estados dinámicos.
+* **CSS3 Custom Properties** - Estilos optimizados y variables de diseño.
 
-## Expanding the ESLint configuration
+## 📁 Estructura del Proyecto
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+```text
+NEBULA-TECH-STORE/
+├── public/
+│   └── images/          # Assets estáticos y fotos de productos
+├── src/
+│   ├── components/      # Componentes modulares de la interfaz
+│   │   ├── cartdrawer.jsx
+│   │   ├── categories.jsx
+│   │   ├── gamerzone.jsx
+│   │   ├── header.jsx
+│   │   ├── hero.jsx
+│   │   └── productcard.jsx
+│   ├── App.css
+│   ├── App.jsx          # Lógica centralizada y estado global del carrito
+│   ├── index.css        # Estilos generales y clases de utilidad
+│   └── main.jsx         # Punto de entrada de la aplicación
+├── index.html
+├── package.json
+└── vite.config.js
