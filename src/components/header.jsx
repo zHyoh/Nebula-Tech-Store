@@ -1,4 +1,4 @@
-export default function Header({ cartCount }) {
+export default function Header({ cartCount, onCartClick }) {
   return (
     <header className="header bg-nebula">
       <div className="container d-flex j-content-s-between a-items-center nav">
@@ -12,24 +12,13 @@ export default function Header({ cartCount }) {
           </ul>
         </nav>
         <div className="d-flex g-4 a-items-center">
-          <a href="#" className="icon-link" style={{ position: 'relative' }}>
+          {/* Añadimos el onClick al contenedor del carrito */}
+          <button onClick={onCartClick} className="icon-link" style={{ position: 'relative', background: 'none', border: 'none', cursor: 'pointer' }}>
             🛒 
             {cartCount > 0 && (
-              <span className="cart-badge" style={{
-                position: 'absolute',
-                top: '-8px',
-                right: '-10px',
-                background: '#ff4757',
-                color: 'white',
-                borderRadius: '50%',
-                padding: '2px 6px',
-                fontSize: '11px',
-                fontWeight: 'bold'
-              }}>
-                {cartCount}
-              </span>
+              <span className="cart-badge">{cartCount}</span>
             )}
-          </a>
+          </button>
           <a href="#" className="icon-link">👤</a>
         </div>
       </div>
