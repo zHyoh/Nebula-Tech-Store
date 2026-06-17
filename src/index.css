@@ -421,8 +421,13 @@ nav {
     background-color: rgba(0, 229, 255, 0.05);
 }
 
-.t-center { text-align: center; }
-.g-4 { gap: 1rem; }
+.t-center {
+    text-align: center;
+}
+
+.g-4 {
+    gap: 1rem;
+}
 
 
 
@@ -579,8 +584,16 @@ nav {
     margin-bottom: 0.5rem;
 }
 
-.icon-cyan { color: var(--primary-color); text-shadow: 0 0 15px rgba(0, 229, 255, 0.3); }
-.icon-purple { color: var(--secondary-color); text-shadow: 0 0 15px rgba(157, 0, 255, 0.3); }
+.icon-cyan {
+    color: var(--primary-color);
+    text-shadow: 0 0 15px rgba(0, 229, 255, 0.3);
+}
+
+.icon-purple {
+    color: var(--secondary-color);
+    text-shadow: 0 0 15px rgba(157, 0, 255, 0.3);
+}
+
 .main-card .card-img-main {
     position: absolute;
     bottom: 0;
@@ -597,7 +610,7 @@ nav {
 
 .secondary-card {
     position: relative !important;
-    height: 300px !important; 
+    height: 300px !important;
     min-height: 300px !important;
     overflow: hidden !important;
     display: flex !important;
@@ -611,13 +624,13 @@ nav {
     left: auto !important;
     right: 0 !important;
     bottom: 0 !important;
-    width: 60% !important; 
-    height: 100% !important; 
-    object-fit: cover !important; 
+    width: 60% !important;
+    height: 100% !important;
+    object-fit: cover !important;
     object-position: center !important;
     -webkit-mask-image: linear-gradient(to right, transparent, black 25%) !important;
     mask-image: linear-gradient(to right, transparent, black 25%) !important;
-    
+
     z-index: 1 !important;
     display: block !important;
 }
@@ -628,6 +641,7 @@ nav {
     width: 45% !important;
     padding-left: 2rem !important;
 }
+
 .mini-card .icon-box {
     font-size: 2.5rem;
     margin-bottom: 0.5rem;
@@ -646,8 +660,13 @@ nav {
         grid-template-columns: 1fr;
         grid-template-rows: auto;
     }
-    .main-card { grid-row: auto; height: 400px; }
+
+    .main-card {
+        grid-row: auto;
+        height: 400px;
+    }
 }
+
 /*PROFE SI LEE ESTO, ESTUVE COMO 30MINUTOS MIRANDO PORQUE LA IMAGEN NO SE QUEDABA
 EN MEDIO, SE BAJABA SOLA, AGREGUE ESA LINEA SOLO PARA ESO, LO TQM PROFE */
 .card-img-side {
@@ -809,116 +828,177 @@ EN MEDIO, SE BAJABA SOLA, AGREGUE ESA LINEA SOLO PARA ESO, LO TQM PROFE */
         grid-template-columns: 1fr;
     }
 }
+
 /* Overlay oscuro de fondo */
 .cart-overlay {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  background: rgba(0, 0, 0, 0.7);
-  backdrop-filter: blur(4px);
-  z-index: 1000;
-  display: flex;
-  justify-content: flex-end;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(4px);
+    z-index: 1000;
+    display: flex;
+    justify-content: flex-end;
 }
 
 /* Panel lateral derecho */
 .cart-drawer {
-  width: 100%;
-  max-width: 400px;
-  height: 100%;
-  background: #0b0c10; /* Color oscuro base */
-  border-left: 2px solid #00f2fe; /* Borde de neón cian */
-  box-shadow: -10px 0 30px rgba(0, 242, 254, 0.15);
-  display: flex;
-  flex-direction: column;
-  padding: 24px;
-  color: #fff;
+    width: 100%;
+    max-width: 400px;
+    height: 100%;
+    background: #0b0c10;
+    /* Color oscuro base */
+    border-left: 2px solid #00f2fe;
+    /* Borde de neón cian */
+    box-shadow: -10px 0 30px rgba(0, 242, 254, 0.15);
+    display: flex;
+    flex-direction: column;
+    padding: 24px;
+    color: #fff;
 }
 
 .cart-header h2 {
-  margin: 0;
-  font-size: 24px;
-  color: #00f2fe;
+    margin: 0;
+    font-size: 24px;
+    color: #00f2fe;
 }
 
 .close-btn {
-  background: none;
-  border: none;
-  color: #fff;
-  font-size: 22px;
-  cursor: pointer;
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 22px;
+    cursor: pointer;
 }
 
 .cart-body {
-  flex: 1;
-  overflow-y: auto;
-  margin-top: 20px;
+    flex: 1;
+    overflow-y: auto;
+    margin-top: 20px;
 }
 
 .empty-msg {
-  text-align: center;
-  color: #666;
-  margin-top: 40px;
+    text-align: center;
+    color: #666;
+    margin-top: 40px;
 }
 
 /* Tarjeta de producto dentro del carrito */
 .cart-item {
-  background: #1f2833;
-  padding: 12px;
-  border-radius: 6px;
-  margin-bottom: 12px;
-  border: 1px solid #45f3ff33;
+    background: #1f2833;
+    padding: 12px;
+    border-radius: 6px;
+    margin-bottom: 12px;
+    border: 1px solid #45f3ff33;
 }
 
 .cart-item h4 {
-  margin: 0 0 4px 0;
-  font-size: 16px;
+    margin: 0 0 4px 0;
+    font-size: 16px;
 }
 
 .cart-item p {
-  margin: 0;
-  color: #00f2fe;
-  font-size: 14px;
+    margin: 0;
+    color: #00f2fe;
+    font-size: 14px;
 }
 
 .delete-btn {
-  background: none;
-  border: none;
-  cursor: pointer;
-  font-size: 18px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
 }
 
 /* Footer y Botón de Pago */
 .cart-footer {
-  border-top: 1px solid #1f2833;
-  padding-top: 20px;
+    border-top: 1px solid #1f2833;
+    padding-top: 20px;
 }
 
 .total-box {
-  font-size: 18px;
-  font-weight: bold;
-  margin-bottom: 16px;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 16px;
 }
 
 .total-price {
-  color: #00f2fe;
+    color: #00f2fe;
 }
 
 .checkout-btn {
-  width: 100%;
-  background: linear-gradient(90deg, #00f2fe, #4facfe);
-  color: #000;
-  border: none;
-  padding: 14px;
-  border-radius: 6px;
-  font-weight: bold;
-  font-size: 16px;
-  cursor: pointer;
-  transition: transform 0.2s;
+    width: 100%;
+    background: linear-gradient(90deg, #00f2fe, #4facfe);
+    color: #000;
+    border: none;
+    padding: 14px;
+    border-radius: 6px;
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+    transition: transform 0.2s;
 }
 
 .checkout-btn:hover {
-  transform: scale(1.02);
+    transform: scale(1.02);
+}
+
+/* Clases de utilidad Flexbox que usa tu estructura */
+.d-flex {
+    display: flex;
+}
+
+.j-content-s-between {
+    justify-content: space-between;
+}
+
+.a-items-center {
+    align-items: center;
+}
+
+.j-content-center {
+    justify-content: center;
+}
+
+.t-center {
+    text-align: center;
+}
+
+.g-4 {
+    gap: 1rem;
+}
+
+.g-8 {
+    gap: 2rem;
+}
+
+.list {
+    list-style: none;
+    padding: 0;
+}
+
+.no-margin {
+    margin: 0;
+}
+
+.product-image-container {
+    width: 100%;
+    height: 250px;
+    /* Ajusta la altura según tu diseño */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    background-color: #1f2833;
+    /* Fondo oscuro por si tarda en cargar */
+}
+
+.product-image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* Hace que la imagen llene el espacio sin deformarse */
+    display: block;
 }
